@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2023-10-24T12:29:26.903Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="9gDf5f6HpmROJmFdKnYA" version="21.7.5" type="device">
+  <diagram name="Page-1" id="jU_Kqhxp4wuVaPffqhUF">
+    <mxGraphModel dx="927" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;:Catalogue&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;livres = []&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="190" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;:ArrayList&amp;lt;Livre&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;size =&lt;strike&gt; 0&amp;nbsp; &lt;/strike&gt;&amp;nbsp;3&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;[]&amp;nbsp; []&amp;nbsp; &amp;nbsp;[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;:Livre&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;isbn =&amp;nbsp;978-2754055888&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nom =&amp;nbsp;Burd&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prenom = Barry&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;titre =&amp;nbsp;Java pour les nuls&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nbPage = 466&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prixConseille =&amp;nbsp;24.95&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;anneeEdition = 2014&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="180" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-8" target="ZUwNtKUphWfWM0GnWOA1-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.065;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-8" target="ZUwNtKUphWfWM0GnWOA1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-8" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="420" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-9" value="livre1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;:Livre&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;isbn =&amp;nbsp;978-2754055888&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nom =&amp;nbsp;Burd&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prenom = Barry&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;titre =&amp;nbsp;Le trône de fer l&#39;intégrale&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nbPage = 1200&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prixConseille =&amp;nbsp;20.95&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;anneeEdition = 2015&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="410" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-13" target="ZUwNtKUphWfWM0GnWOA1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="320" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-13" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="ZUwNtKUphWfWM0GnWOA1-15">
+          <mxGeometry x="40" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-14" value="livre2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZUwNtKUphWfWM0GnWOA1-15">
+          <mxGeometry width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;:Livre&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;isbn =&amp;nbsp;978-2754055888&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nom =&amp;nbsp;Burd&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prenom = Barry&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;titre =&amp;nbsp;Le trône de fer l&#39;intégrale&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;nbPage = 1200&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;prixConseille =&amp;nbsp;20.95&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;anneeEdition = 2015&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="610" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-18" target="ZUwNtKUphWfWM0GnWOA1-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="314" y="525" width="66" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-18" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" vertex="1" parent="ZUwNtKUphWfWM0GnWOA1-20">
+          <mxGeometry x="36" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-19" value="livre3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZUwNtKUphWfWM0GnWOA1-20">
+          <mxGeometry width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.447;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.186;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-5" target="ZUwNtKUphWfWM0GnWOA1-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-18" target="ZUwNtKUphWfWM0GnWOA1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.158;entryY=1.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZUwNtKUphWfWM0GnWOA1-13" target="ZUwNtKUphWfWM0GnWOA1-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="365" />
+              <mxPoint x="345" y="520" />
+              <mxPoint x="155" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUwNtKUphWfWM0GnWOA1-32" value="Affichage&lt;br&gt;&lt;div&gt;Nombre de livres dans le catalogue : 0&lt;/div&gt;&lt;div&gt;Ajout de livre1 : true&lt;/div&gt;&lt;div&gt;Livre livre 1 présent dans le catalogue : true&lt;/div&gt;&lt;div&gt;Ajout de livre2 : true&lt;/div&gt;&lt;div&gt;Nombre de livres dans le catalogue : 2&lt;/div&gt;&lt;div&gt;Ajout de livre3 : false&lt;/div&gt;&lt;div&gt;Nombre de livres dans le catalogue : 2&lt;/div&gt;&lt;div&gt;Java pour les nuls de Burd Barry&lt;/div&gt;&lt;div&gt;Le trône de fer l&#39;intégrale de Martin George R-R&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Livre avec l&#39;isbn 978-2290107096 : Le trône de fer l&#39;intégrale de Martin George R-R&lt;/div&gt;&lt;div&gt;Retrait du livre3 : true&lt;/div&gt;&lt;div&gt;Nombre de livres dans le catalogue : 1&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="50" width="520" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

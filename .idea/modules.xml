@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ALGO_FOR/ALGO_FOR.iml" filepath="$PROJECT_DIR$/ALGO_FOR/ALGO_FOR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_FORDansFOR/ALGO_FORDansFOR.iml" filepath="$PROJECT_DIR$/ALGO_FORDansFOR/ALGO_FORDansFOR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_GUERRIER/ALGO_GUERRIER.iml" filepath="$PROJECT_DIR$/ALGO_GUERRIER/ALGO_GUERRIER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_PENDU/ALGO_PENDU.iml" filepath="$PROJECT_DIR$/ALGO_PENDU/ALGO_PENDU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_PLATEAU/ALGO_PLATEAU.iml" filepath="$PROJECT_DIR$/ALGO_PLATEAU/ALGO_PLATEAU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_TABLES/ALGO_TABLES.iml" filepath="$PROJECT_DIR$/ALGO_TABLES/ALGO_TABLES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_WHILE/ALGO_WHILE.iml" filepath="$PROJECT_DIR$/ALGO_WHILE/ALGO_WHILE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APOO_fiche1/APOO_fiche1.iml" filepath="$PROJECT_DIR$/APOO_fiche1/APOO_fiche1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APOO_fiche3/APOO_fiche3.iml" filepath="$PROJECT_DIR$/APOO_fiche3/APOO_fiche3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APOO_fiche4/APOO_fiche4.iml" filepath="$PROJECT_DIR$/APOO_fiche4/APOO_fiche4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APOO_fiche5/APOO_fiche5.iml" filepath="$PROJECT_DIR$/APOO_fiche5/APOO_fiche5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MATH_3/MATH_3.iml" filepath="$PROJECT_DIR$/MATH_3/MATH_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Vinci.iml" filepath="$PROJECT_DIR$/.idea/Vinci.iml" />
+    </modules>
+  </component>
+</project>
