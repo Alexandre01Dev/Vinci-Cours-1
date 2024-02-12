@@ -103,22 +103,49 @@ public class Polynome {
             a = b;
             b = temp;
         }
+        double aEvalue = evalueEn(a);
+        double bEvalue = evalueEn(b);
         //2) Vérification qu'une des bornes n'est pas la racine
+        if(aEvalue == 0){
+            System.out.println("A est déjà une racine");
+            return a;
+        }
+        if(bEvalue == 0){
+            System.out.println("B est déjà une racine");
+            return b;
+        }
 
         //3) Vérification de Bolzano
+        if(aEvalue * bEvalue < 0){
+            System.out.println("Bolzano : Il y a au moins une racine");
+        }else {
+            System.out.println("Bolzano : Pas vérifié");
+            throw new NumeriqueException();
+        }
+        System.out.println(evalueEn(a));
 
         //4) Approximation initiale
-
+        double moitie =(a + b)/2;
+        double moitieEvalue = evalueEn(moitie);
         //5) Itération
-
+        for (int i = 0; i < n; i++) {
             //a) Vérification que l'approximation n'est pas la racine
-
+            if(moitieEvalue == 0){
+                return moitie;
+            }
             //b) Mise à jour de l'intervalle [a, b]
-
+            if(aEvalue*moitieEvalue>0){
+                a = moitie;
+                aEvalue = evalueEn(a);
+            }else {
+                b = moitie;
+            }
             //c) Calcul de la nouvelle approximation
-
-        //6) Renvoie de l'approximation obtenue
-        return 0 ;
+            moitie = (a + b)/2;
+            moitieEvalue = evalueEn(moitie);
+        }
+        //6) Renvoie de l'approximation obtenu
+        return moitie;
     }
 
     // Renvoie une approximation à minimum d décimales exactes de la racine contenue dans
@@ -157,21 +184,63 @@ public class Polynome {
     // Lance une NumeriqueException si la présence d'une et une seule racine n'est pas garantie
     public double racineParNewtonNIterations(double a, double b, int n) throws NumeriqueException {
         // TO DO
+        if (a > b) {
+            double temp = a;
+            a = b;
+            b = temp;
+        }
         //1) Vérification qu'une des bornes n'est pas la racine
 
+        double fA = evalueEn(a);
+        double fB = evalueEn(b);
+        if(fA == 0){
+            System.out.println("A est déjà une racine");
+            return a;
+        }
+        if(fB == 0){
+            System.out.println("B est déjà une racine");
+            return b;
+        }
+
         //2) Vérification de Bolzano
+        if(fA * fB < 0){
+            System.out.println("Bolzano : Il y a au moins une racine");
+        }else {
+            System.out.println("Bolzano : Pas vérifié");
+            throw new NumeriqueException();
+        }
+        System.out.println(evalueEn(a));
 
-        //3) Vérification des hypothèses supplémentaires (f' et f'' de même signe en a et b)
+        // 3) Vérification des hypothèses supplémentaires (f' et f'' de même signe en a et b)
+        Polynome derive = polynomeDerive();
+        Polynome deriveDeDerive = derive.polynomeDerive();
+        // ou deriveSeconde
+        double fPrimeA = derive.evalueEn(a);
+        double fPrimeB = derive.evalueEn(b);
+        double fPrimePrimeA = deriveDeDerive.evalueEn(a);
+        double fPrimePrimeB = deriveDeDerive.evalueEn(b);
 
+        if(fPrimeA*fPrimeB <= 0) throw new NumeriqueException();
+        if(fPrimePrimeA*fPrimePrimeB <= 0) throw new NumeriqueException();
+
+
+        double racine;
         //4) Approximation initiale
+        if(fA* fPrimePrimeA > 0){
+            racine = a;
+        }else {
+            racine = b;
+        }
 
         //5) Itération
-
+        for (int i = 1; i <= n; i++) {
             //a) Calcul de la nouvelle approximation
+            racine = racine - evalueEn(racine)/ derive.evalueEn(racine);
             //b) Vérification que la nouvelle approximation n'est pas la racine
-
+            if(evalueEn(racine) == 0) return racine;
+        }
         //6) Renvoie de la racine
-        return 0;
+        return racine;
     }
 
     // Renvoie une approximation à minimum d décimales exactes de la racine contenue dans

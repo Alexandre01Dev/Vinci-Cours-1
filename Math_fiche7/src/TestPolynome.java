@@ -59,6 +59,7 @@ public class TestPolynome {
         System.out.println("========");
         try {
             result = p.racineParBissectionNIterations(-3, 3, 6);
+            System.out.println(result);
             System.out.println("Approximation de la racine de x^4-16 sur l'intervalle [-3,3] (a = -3, b= 3) --> Bolzano pas vérifié --> Il fallait lancer une NumeriqueException");
             testOK = false;
         } catch (NumeriqueException e) {

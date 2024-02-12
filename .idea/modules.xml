@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ALGOO_complexite/ALGOO_complexite.iml" filepath="$PROJECT_DIR$/ALGOO_complexite/ALGOO_complexite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_2DIM/ALGO_2DIM.iml" filepath="$PROJECT_DIR$/ALGO_2DIM/ALGO_2DIM.iml" />
       <module fileurl="file://$PROJECT_DIR$/ALGO_FOR/ALGO_FOR.iml" filepath="$PROJECT_DIR$/ALGO_FOR/ALGO_FOR.iml" />
       <module fileurl="file://$PROJECT_DIR$/ALGO_FORDansFOR/ALGO_FORDansFOR.iml" filepath="$PROJECT_DIR$/ALGO_FORDansFOR/ALGO_FORDansFOR.iml" />
       <module fileurl="file://$PROJECT_DIR$/ALGO_GUERRIER/ALGO_GUERRIER.iml" filepath="$PROJECT_DIR$/ALGO_GUERRIER/ALGO_GUERRIER.iml" />
@@ -11,13 +12,19 @@
       <module fileurl="file://$PROJECT_DIR$/ALGO_TABLES/ALGO_TABLES.iml" filepath="$PROJECT_DIR$/ALGO_TABLES/ALGO_TABLES.iml" />
       <module fileurl="file://$PROJECT_DIR$/ALGO_WHILE/ALGO_WHILE.iml" filepath="$PROJECT_DIR$/ALGO_WHILE/ALGO_WHILE.iml" />
       <module fileurl="file://$PROJECT_DIR$/ALGO_tablesNonTriees/ALGO_tablesNonTriees.iml" filepath="$PROJECT_DIR$/ALGO_tablesNonTriees/ALGO_tablesNonTriees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALGO_tablestriees/ALGO_tablestriees.iml" filepath="$PROJECT_DIR$/ALGO_tablestriees/ALGO_tablestriees.iml" />
       <module fileurl="file://$PROJECT_DIR$/APOO_fiche1/APOO_fiche1.iml" filepath="$PROJECT_DIR$/APOO_fiche1/APOO_fiche1.iml" />
       <module fileurl="file://$PROJECT_DIR$/APOO_fiche3/APOO_fiche3.iml" filepath="$PROJECT_DIR$/APOO_fiche3/APOO_fiche3.iml" />
       <module fileurl="file://$PROJECT_DIR$/APOO_fiche4/APOO_fiche4.iml" filepath="$PROJECT_DIR$/APOO_fiche4/APOO_fiche4.iml" />
       <module fileurl="file://$PROJECT_DIR$/APOO_fiche5/APOO_fiche5.iml" filepath="$PROJECT_DIR$/APOO_fiche5/APOO_fiche5.iml" />
       <module fileurl="file://$PROJECT_DIR$/APOO_fiche6/APOO_fiche6.iml" filepath="$PROJECT_DIR$/APOO_fiche6/APOO_fiche6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APOO_fiche7/APOO_fiche7.iml" filepath="$PROJECT_DIR$/APOO_fiche7/APOO_fiche7.iml" />
       <module fileurl="file://$PROJECT_DIR$/MATH_3/MATH_3.iml" filepath="$PROJECT_DIR$/MATH_3/MATH_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Math_fiche7/Math_fiche7.iml" filepath="$PROJECT_DIR$/Math_fiche7/Math_fiche7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math_fiche8/Math_fiche8.iml" filepath="$PROJECT_DIR$/Math_fiche8/Math_fiche8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SD_FICHE1/SD_FICHE1.iml" filepath="$PROJECT_DIR$/SD_FICHE1/SD_FICHE1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SD_fiche2/SD_fiche2.iml" filepath="$PROJECT_DIR$/SD_fiche2/SD_fiche2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SD_fiche3/SD_fiche3.iml" filepath="$PROJECT_DIR$/SD_fiche3/SD_fiche3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Vinci.iml" filepath="$PROJECT_DIR$/.idea/Vinci.iml" />
     </modules>
   </component>
