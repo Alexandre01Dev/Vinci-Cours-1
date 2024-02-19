@@ -19,14 +19,19 @@ public class Bal2 implements Bal{
      */
     public Bal2(){
         //TODO
-
+        dequeH = new ArrayDeque<>();
+        dequeF = new ArrayDeque<>();
     }
 
     public void ajouterEtudiant(Etudiant etudiant){
         if(etudiant==null)
             throw new IllegalArgumentException("etudiant null");
         //TODO
-
+        if(etudiant.getSexe() == 'M'){
+            dequeH.addLast(etudiant);
+        }else {
+            dequeF.addLast(etudiant);
+        }
     }
 
     //A NE PAS MODIFIER

@@ -60,11 +60,16 @@ public class TestDequeImplChaineeAS {
                 System.out.println(" KO : taille obtenue : " + dVide.taille());
                 return;
             }
+            System.out.println("Chekouille "+ dVide.toString());
+            System.out.println("Chekouille is equals to a ? "+ dVide.toString().equals("a"));
+            System.out.println("Chekouille is not equals to a ? "+ !dVide.toString().equals("a"));
             if(!dVide.toString().equals("a")){
+                System.out.println("I'm not equals to a :c");
                 System.out.println(" KO : contenu (tete --> queue) obtenu : "+ dVide);
                 return;
             }
             if(!dVide.parcoursInverse().equals("a")){
+                System.out.println("? parcours inverse ?" + dVide.parcoursInverse());
                 System.out.println(" KO : contenu (queue --> tete) obtenu : "+ dVide.parcoursInverse());
                 return;
             }

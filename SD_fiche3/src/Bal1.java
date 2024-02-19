@@ -9,7 +9,7 @@ public class Bal1 implements Bal{
      *
      */
 
-    private NoeudEtudiant tete;
+    private final NoeudEtudiant tete;
     private NoeudEtudiant derM;
     private NoeudEtudiant derF;
 
@@ -20,6 +20,14 @@ public class Bal1 implements Bal{
         // TODO
         // construit une liste avec 2 noeuds bidons
         // les elements de ces noeuds bidons sont a null
+        NoeudEtudiant bidonTete = new NoeudEtudiant();
+        NoeudEtudiant bidonDer = new NoeudEtudiant();
+
+        tete = bidonTete;
+        derM = bidonTete;
+        bidonTete.suivant = bidonDer;
+        derF = bidonDer;
+
 
     }
 
@@ -32,13 +40,20 @@ public class Bal1 implements Bal{
     public void ajouterEtudiant(Etudiant etudiant){
         if(etudiant==null)
             throw new IllegalArgumentException("etudiant null");
-        //TODO
+
+        if(etudiant.getSexe() == 'M') {
+            NoeudEtudiant nouveau = new NoeudEtudiant(etudiant,derM.suivant);
+            derM.suivant = nouveau;
+            derM = nouveau;
+        }else {
+            derF.etudiant = etudiant;
+            derF = derF.suivant = new NoeudEtudiant();
+        }
     }
 
     // A NE PAS MODIFIER
     // VA SERVIR POUR LES TESTS
     public String toString(){
-
         NoeudEtudiant baladeur = tete.suivant;
         if(baladeur==derF){
             return "[]";

@@ -1,8 +1,8 @@
 public class DequeImplChaineeAS<E> implements Deque<E>{
 
 
-    private Noeud tete ;
-    private Noeud queue ;
+    private final Noeud tete ;
+    private final Noeud queue ;
     private int taille ;
 
     public DequeImplChaineeAS(){
@@ -22,31 +22,73 @@ public class DequeImplChaineeAS<E> implements Deque<E>{
     }
 
     public void ajouterEnPremier(E element) {
-        //TODO
+        /*
+          Cas 1 [/start] -> [a] -> [/end]
+          Etape 1  [/start] -> [/end]
+            Prendre start.suivant qu'on va appeler aDecaler (dans ce cas /end)
+            aDecaler.precedent = nouveau
+            start.suivant = nouveau
+
+            [/start] -> [a] -> [/end]
+         */
+        Noeud noeud = new Noeud(element);
+        Noeud aDecaler = tete.suivant; //
+
+        noeud.suivant = aDecaler;
+        aDecaler.precedent = noeud;
+
+        tete.suivant = noeud;
+        noeud.precedent = tete;
+        taille++;
     }
 
     public E retirerPremier() {
         //TODO
-        return null;
+        if(taille == 0){
+           throw new DequeVideException();
+        }
+        Noeud sup = tete.suivant;
+        tete.suivant = sup.suivant;
+        tete.suivant.precedent = tete;
+        taille--;
+        return sup.element;
     }
+
 
     public void ajouterEnDernier(E element) {
         //TODO
+        Noeud noeud = new Noeud(element,queue.precedent, queue);
+        Noeud aDecaler = queue.precedent;
+
+        queue.precedent = noeud;
+        aDecaler.suivant = noeud;
+        taille++;
     }
 
     public E retirerDernier() throws DequeVideException {
         //TODO
-        return null;
+        if(taille == 0){
+            throw new DequeVideException();
+        }
+        Noeud sup = queue.precedent;
+        queue.precedent = sup.precedent;
+        queue.precedent.suivant = queue;
+        taille--;
+        return sup.element;
     }
 
     public E premier()throws DequeVideException {
-        //TODO
-        return null;
+        if(estVide()){
+            throw new DequeVideException();
+        }
+        return tete.suivant.element;
     }
 
     public E dernier()throws DequeVideException {
-        //TODO
-        return null;
+        if(estVide()){
+            throw new DequeVideException();
+        }
+        return queue.precedent.element;
     }
 
 
@@ -89,6 +131,7 @@ public class DequeImplChaineeAS<E> implements Deque<E>{
     public String parcoursInverse(){
         String aRenvoyer="";
         Noeud baladeur=queue.precedent;
+        System.out.println("precedent ? " + baladeur.element);
         int cpt = 0;
         while(baladeur!=tete) {
             cpt++;
