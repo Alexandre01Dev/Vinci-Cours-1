@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import java.util.ArrayList;
@@ -45,7 +46,13 @@ public class ListeCaracteres {
 	 * @return true si le caractere est present dans la liste, false sinon
 	 */
 	public boolean contient(char caractereRecherche){
-		
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			if(baladeur.caractere == caractereRecherche){
+				return true;
+			}
+			baladeur = baladeur.suivant;
+		}
 		return false;
 		//TODO
 	}
@@ -57,10 +64,14 @@ public class ListeCaracteres {
 	 * @return le nombre d'occurrences du caractere
 	 */
 	public int nombreOccurrences(char caractereRecherche){
-		
-		return 0;
-		//TODO
-		
+		int o = 0;
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			if(baladeur.caractere == caractereRecherche)
+				o++;
+			baladeur = baladeur.suivant;
+		}
+		return o;
 	}
 
 	
@@ -70,8 +81,16 @@ public class ListeCaracteres {
 	 * @param nouveauCaractere le nouveau caractere
 	 */
 	public void remplacer(char caractereARemplacer, char nouveauCaractere){
-		
-		//TODO
+
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			if(baladeur.caractere == caractereARemplacer){
+				baladeur.caractere = nouveauCaractere;
+				return;
+			}
+
+			baladeur = baladeur.suivant;
+		}
 	}
 
 	
@@ -82,7 +101,12 @@ public class ListeCaracteres {
 	 */
 	public void remplacerTout(char caractereARemplacer, char nouveauCaractere){
 		
-		//TODO
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			if(baladeur.caractere == caractereARemplacer)
+				baladeur.caractere = nouveauCaractere;
+			baladeur = baladeur.suivant;
+		}
 
 	}
 	
@@ -93,8 +117,18 @@ public class ListeCaracteres {
 	 * @throws NoSuchElementException si la liste est vide
 	 */
 	public char max() throws NoSuchElementException{
-		
-		return' ';		
+		char max = 0;
+		if(tete == null){
+			throw new NoSuchElementException();
+		}
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			if(max < baladeur.caractere){
+				max = baladeur.caractere;
+			}
+			baladeur = baladeur.suivant;
+		}
+		return max;
 		// TODO	
 		// rmq : le plus petit caractere : ' '
 	}
@@ -108,8 +142,13 @@ public class ListeCaracteres {
 	 * @return l'arrayList cree
 	 */
 	public ArrayList<Character> enArrayList(){
-		
-		return  null;
+		ArrayList<Character> characters = new ArrayList<>();
+		NoeudCaractere baladeur = tete;
+		while (baladeur != null){
+			characters.add(baladeur.caractere);
+			baladeur = baladeur.suivant;
+		}
+		return  characters;
 		// TODO
 		// add() est en O(1)!
 		
@@ -122,11 +161,15 @@ public class ListeCaracteres {
 	 * @return true si les 2 listes sont les memes, false sinon
 	 */
 	public boolean estEgalA(ListeCaracteres l){
-		
-		return false;
-		// TODO
-		// N'utilisez pas la methode toString()!
-
+		NoeudCaractere baladeur = tete;
+		NoeudCaractere baladeurAsync = l.tete;
+		while (baladeur != null || baladeurAsync != null){
+			if(baladeurAsync == null || baladeur == null) return false;
+			if(baladeurAsync.caractere != baladeur.caractere) return false;
+			baladeur = baladeur.suivant;
+			baladeurAsync = baladeurAsync.suivant;
+		}
+		return true;
 	}
 	
 	/**
@@ -134,7 +177,8 @@ public class ListeCaracteres {
 	 * @return une copie de la liste courante
 	 */
 	public ListeCaracteres clone(){
-		
+		ListeCaracteres listeCaracteres = new ListeCaracteres();
+
 		return null;
 		// TODO		
 		// DEFI!	

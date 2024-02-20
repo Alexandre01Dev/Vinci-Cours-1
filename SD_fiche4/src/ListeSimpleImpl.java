@@ -8,6 +8,7 @@ public class ListeSimpleImpl<E> implements ListeSimple<E> {
 	
 	private Noeud tete;
 	private int taille;
+	private int currentVersion = 0;
 	
 
 	public ListeSimpleImpl(){
@@ -103,6 +104,9 @@ public class ListeSimpleImpl<E> implements ListeSimple<E> {
 	private class IterateurImpl implements Iterator{
 		
 		private Noeud noeudNext;
+
+
+		private final int version = currentVersion++;
 		
 	
 		// Au depart le noeud "next" est le noeud de tete
@@ -125,6 +129,7 @@ public class ListeSimpleImpl<E> implements ListeSimple<E> {
 			if(!hasNext()) throw new NoSuchElementException();
 		   // pensez a consulter la JAVADOC de la classe Iterator!!!
 		   	E e = noeudNext.element;
+
 			noeudNext = noeudNext.suivant;
             return e;
         }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TestListeCaracteres {
 
-	private static Scanner scanner = new Scanner(System.in);
+	private static final Scanner scanner = new Scanner(System.in);
 
 	/**
 	 * Cette methode verifie qu'un resultat attendu est bien un resultat obtenu.
@@ -489,7 +489,4 @@ public class TestListeCaracteres {
 		System.out.println();
 
 	}
-
-
-
 }
